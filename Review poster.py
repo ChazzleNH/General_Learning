@@ -8,6 +8,8 @@ path = '/data/feedback'
 url = 'http://35.222.18.120/feedback'
 review_dict = {}
 
+''' Generates a dictionary to be pushed to the URL listed below '''
+
 for file in os.listdir(path):
     if file.endswith('.txt'):
         txt_file = os.path.join(path, file)
